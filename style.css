@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #141414;
+  font-family: "Arial", Times, serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+h2.topic {
+  padding: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+
+/* Header */
+
+#containertop {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 90px;
+  margin-top: -31%;
+  padding-left: 2%;
+  position: fixed;
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.7) 10%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+div.direitanav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 500px;
+  margin-top: 1.4%;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #e5e5e5;
+  margin-right: 10px;
+  font-size: 15px;
+  font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 5px;
+  transition: color 0.4s;
+}
+
+header nav a:hover {
+  color: rgb(190, 189, 189);
+}
+
+nav.top {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 20px;
+  margin-top: 1.4%;
+}
+
+/*Logos Menu*/
+
+img.logo {
+  margin-top: 1.4%;
+  margin-left: 5px;
+  color: var(--vermelho);
+  font-family: "Arial Black", Times;
+  height: 60px;
+}
+
+.logonav img {
+  margin-top: -20px;
+  height: 35px;
+  border-radius: 5%;
+}
+
+#iconperfil img {
+  margin-top: -16px;
+}
+
+/*Menu Secundário - Foto de perfil*/
+
+#setamenu img {
+  height: 25px;
+  margin-left: -20px;
+}
+
+#setamenu img:hover {
+  -webkit-transform: rotate(-180deg);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-child {
+  display: none;
+  background-color: black;
+  min-width: 200px;
+  position: absolute;
+}
+
+.dropdown-child a {
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-child {
+  display: block;
+}
+
+ul.dropdown-child {
+  margin-top: 7px;
+  background-color: #141414;
+}
+a.inf {
+  text-decoration: none;
+  color: #e5e5e5;
+  margin-top: -10px;
+  margin-right: 10px;
+  font-size: 14px;
+  font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 5px;
+  transition: color 0.4s;
+}
+
+a.menusec {
+  padding: 5px;
+  font-size: 14px;
+}
+
+a.menusec:hover {
+  text-decoration: underline;
+  transition: none;
+  color: white;
+}
+
+#containerbot {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: absolute;
+  margin-bottom: -10%;
+}
+
+/*Banner principal*/
+
+.filme-principal .container {
+  width: 100%;
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("./img/capa-house.jpg");
+  height: 550px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/*Descrição Filme*/
+
+.container {
+  margin-left: 20px;
+}
+
+h3.titulo {
+  margin-top: -70px;
+  font-size: 40px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  position: absolute;
+  z-index: 1;
+}
+
+p.descricao {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  width: 35%;
+  position: absolute;
+}
+
+.botao1 {
+  background-color: rgba(255, 255, 255, 0.89);
+  border: none;
+  border-radius: 5%;
+  color: black;
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 13px;
+  font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  margin-top: 90px;
+}
+
+.botao1:hover {
+  background-color: rgba(255, 255, 255, 0.452);
+}
+
+.botao2 {
+  background-color: #6d6d6eb3;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  margin-top: 90px;
+}
+
+.botao2:hover {
+  background-color: #6d6d6e4d;
+}
+
+.botao i {
+  margin-right: 8px;
+}
+
+.carrosel-filmes {
+  margin-top: 5px;
+}
+
+/*Rodapé*/
+footer#rodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  color: #808080;
+}
+
+div.dados {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25%;
+  margin-right: 15%;
+}
+
+div.dados a {
+  padding-top: 0;
+  margin-right: 40px;
+  margin-top: -40px;
+  color: #808080;
+  font-size: 13px;
+  font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
+a#assign {
+  color: white;
+}
+
+/*Media Queries*/
+
+@media (max-width: 1300px) {
+  div.esquerdanav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: -10rem;
+  }
+  #setamenu img {
+    position: fixed;
+    margin-left: 2.8%;
+  }
+
+  div#containertop {
+    margin-top: -30rem;
+  }
+}
+
+@media (max-width: 1215px) {
+  div.esquerdanav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: -20rem;
+  }
+  #setamenu img {
+    position: fixed;
+    margin-left: 2.8%;
+  }
+
+  div#containertop {
+    margin-top: -30rem;
+  }
+}
+
+@media (max-width: 1010px) {
+  div.esquerdanav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: -22rem;
+  }
+  #setamenu img,
+  a.inf {
+    visibility: hidden;
+  }
+
+  #logolupa img {
+    position: absolute;
+    padding-left: 60px;
+  }
+
+  div#containertop {
+    margin-top: -30rem;
+  }
+
+  .botao1,
+  .botao2 {
+    padding: 10px 25px;
+    margin-right: 15px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 950px) {
+  .botao1,
+  .botao2 {
+    padding: 10px 25px;
+    margin-right: 15px;
+    font-size: 13px;
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 910px) {
+  div.esquerdanav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: -30rem;
+  }
+  #setamenu img,
+  a.inf {
+    visibility: hidden;
+  }
+
+  #logolupa img {
+    position: absolute;
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: 571px) {
+  .botao1,
+  .botao2 {
+    margin-top: 190px;
+  }
+}
+
+@media (max-width: 571px) {
+  .botao1,
+  .botao2 {
+    margin-top: 190px;
+  }
+}
+
+@media (max-width: 490px) {
+  .botao1,
+  .botao2 {
+    margin-top: 260px;
+  }
+}
